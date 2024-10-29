@@ -37,9 +37,13 @@ volumes:
 >Para explicar como funciona, vamos ao propio link da imaxe: https://hub.docker.com/r/internetsystemsconsortium/bind9
 
 Como se pode ver no anterior yml e no que deixarei no repositorio, eu utilicei os tres volumes como na guia da propia imaxe.
-Unha breve explicacion pode ser : 
-`bind_config:/etc/bind`: Garda configuraciones de BIND, como archivos de zona e políticas DNS.
-`bind_cache:/var/cache/bind`: Almacena na caché DNS, mellorando o rendimiento ao conservar datos entre reinicios.
-`bind_lib:/var/lib/bind`: Garda datos dinámicos de DNS, como rexistros actualizables por clientes autorizados.
+Unha breve explicacion pode ser :   
+
+`bind_config:/etc/bind`: Garda configuraciones de BIND, como archivos de zona e políticas DNS.  
+
+`bind_cache:/var/cache/bind`: Almacena na caché DNS, mellorando o rendimiento ao conservar datos entre reinicios.  
+
+`bind_lib:/var/lib/bind`: Garda datos dinámicos de DNS, como rexistros actualizables por clientes autorizados.  
+
 ## 3. Unha comprobado que o contenedor funciona, sube a GitHub o ficheiro nun repo.
 Como xa comprobamos que todo funciona correctamente, facemos o commit no meu caso dende visual estudio. O `git add .` para engadir o .yml logo o commit e o `git push` como sempre.
