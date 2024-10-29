@@ -3,8 +3,7 @@
 >[!NOTE]
 >Para poder crear este yml e configurar todo nos iformamos na paxina oficial e vamos ao propio link da imaxe: https://hub.docker.com/r/internetsystemsconsortium/bind9
 
-Para configurar un contenedor primeiro debemos crear un ficheiro que chamarase `docker-compose.yml` que sera o arquivo no que estableceremos todos os parametros asi como os volumes seguindo a configuracion que nos explican na propia paxina oficial de dockerhub de bind9. O codigo do mey .yml 
-é o seguinte:
+Para configurar un contenedor primeiro debemos crear un ficheiro que chamarase `docker-compose.yml` que sera o arquivo no que estableceremos todos os parametros asi como os volumes seguindo a configuracion que nos explican na propia paxina oficial de dockerhub de bind9. O codigo do meu .yml é o seguinte:
 ```yaml
 version: '3'
 
