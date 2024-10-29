@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  bind9:
+    image: internetsystemsconsortium/bind9:9.18  # Substitúe por unha versión máis recente, se fose necesario
+    container_name: bind9
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "127.0.0.1:953:953/tcp"  # Porto de control RNDC
+    volumes:
+      - bind_config:/etc/bind  # Configuración de BIND
+      - bind_cache:/var/cache/bind  # Datos de caché de BIND
+      - bind_lib:/var/lib/bind  # Directorio adicional para librerías de BIND
+    environment:
+      - TZ=Europe/Madrid
+    restart: unless-stopped
+
+volumes:
+  bind_config:
+  bind_cache:
+  bind_lib:
+
